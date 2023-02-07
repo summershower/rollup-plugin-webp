@@ -1,0 +1,17 @@
+{
+  "name": "rollup-plugin-webp",
+  "version": "1.0.0",
+  "description": "Rollup plugin for convert images to webp",
+  "main": "index.js",
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "webp",
+    "convert"
+  ],
+  "author": "summershower",
+  "license": "MIT",
+  "devDependencies": {
+    "sharp": "^0.31.3"
+  }
+}
