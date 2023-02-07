@@ -4,7 +4,6 @@ A rollup plugin for convert images to webp.After building, the same name webp fi
 
 这是一个用于将图片转换成Webp格式的rollup插件，构建时会在.jpg、.jpeg、.png、.gif后缀结尾的文件的目录下生成一个.webp格式的同名文件。  
 
-----------------------------------------------------------------
 ## Usage
 #### Install
 ```shell
@@ -12,7 +11,7 @@ npm i rollup-plugin-webp -D
 ```
 #### Config
 ```js
-import webp from 'rollup-plugin-webp'
+const { webp } = require('rollup-plugin-webp');
 
 export default {
     ...
@@ -39,8 +38,8 @@ webp({
 |Key|Type|Default|Description|
 |----|----|----|----|
 |quality|`number`|80|The quality of the generated webp file (1-100), the larger the number, the higher the quality of the file and the larger the space occupied|
-|include|`(string|RegExp)[]`|[]|Folders that need to be included (whitelist mode), you can provide regular expression or string, and the string will be converted to a regular expression like new RegExp(\`/${yourString}/\`)|
-|exclude|`(string|RegExp)[]`|[]|Folders that need to be excluded (blacklist mode), regular expressions or strings can be provided|
+|include|`(string\|RegExp)[]`|[]|Folders that need to be included (whitelist mode), you can provide regular expression or string, and the string will be converted to a regular expression like new RegExp(\`/${yourString}/\`)|
+|exclude|`(string\|RegExp)[]`|[]|Folders that need to be excluded (blacklist mode), regular expressions or strings can be provided|
 
 ## Tips
 
@@ -96,6 +95,6 @@ app.mount('#app');
 ## Github
 [Github](https://github.com/summershower/rollup-plugin-webp)
 
-This is a very simple plugin for our project, it has not been rigorously tested by Jest, if you are interested, welcome to commit pull request to improve this plugin.
+This is a very simple plugin for our internal project, it has not been rigorously tested by Jest, if you are interested, welcome to commit pull request to improve this plugin.
 
 这是一个用于我们业务项目的非常简单的插件，并未经过严谨的Jest测试，如果你有兴趣，欢迎发起pr请求完善此插件。
