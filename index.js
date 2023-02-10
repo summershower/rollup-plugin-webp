@@ -27,9 +27,7 @@ function webp(pluginOptions = {}) {
                 const { fileName, source, type } = bundleInfo;
                 if (type !== 'asset') return;
                 if (!suffixReg.test(fileName)) return;
-                for (let i = 0; i < include.length; i++) {
-                    if (!getStrReg(include[i]).test(fileName)) return;
-                }
+                if (!include.some(v => getStrReg(v).test(fileName))) return
                 for (let i = 0; i < exclude.length; i++) {
                     if (getStrReg(exclude[i]).test(fileName)) return;
                 }

@@ -1,6 +1,6 @@
 # rollup-plugin-webp   
 
-A rollup plugin for convert images to webp.After building, the same name webp file will be generated in the directory of files ending with .jpg, .jpeg, .png, and .gif suffixes.  
+A rollup plugin for convert images to webp. After building, the same name webp files will be generated in the directory of files ending with .jpg, .jpeg, .png, and .gif suffixes.  
 
 这是一个用于将图片转换成Webp格式的rollup插件，构建时会在.jpg、.jpeg、.png、.gif后缀结尾的文件的目录下生成一个.webp格式的同名文件。  
 
@@ -95,6 +95,6 @@ app.mount('#app');
 ## Github
 [Github](https://github.com/summershower/rollup-plugin-webp)
 
-This is a very simple plugin for our internal project, it has not been rigorously tested by Jest, if you are interested, welcome to commit pull request to improve this plugin.
+This is a very simple plugin for our internal project, it has not been rigorously tested by Jest. If you are interested in it, welcome to commit pull request to improve this plugin.
 
 这是一个用于我们业务项目的非常简单的插件，并未经过严谨的Jest测试，如果你有兴趣，欢迎发起pr请求完善此插件。

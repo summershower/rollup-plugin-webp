@@ -1,8 +1,12 @@
 {
   "name": "rollup-plugin-webp",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Rollup plugin for convert images to webp",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summershower/rollup-plugin-webp.git"
+  },
   "keywords": [
     "rollup",
     "rollup-plugin",
@@ -11,7 +15,10 @@
   ],
   "author": "summershower",
   "license": "MIT",
-  "devDependencies": {
+  "peerDependencies": {
     "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "rollup-plugin-webp": "^1.0.1"
   }
 }
