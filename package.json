@@ -18,7 +18,7 @@
   "peerDependencies": {
     "sharp": "^0.31.3"
   },
-  "devDependencies": {
+  "dependencies": {
     "rollup-plugin-webp": "^1.0.1"
   }
 }
